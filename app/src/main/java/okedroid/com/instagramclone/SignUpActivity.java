@@ -25,6 +25,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     private Button btnSave;
     private TextView txtData;
     private Button btnGetall;
+    private Button btnTransition;
     private String allKickBoxers;
     private EditText edtName,edtPunchSpeed,edtPunchPower,edtKickSpeed,edtKickPower;
     @Override
@@ -41,6 +42,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         edtKickPower = findViewById(R.id.edtKickPower);
         txtData = findViewById(R.id.txtData);
         btnGetall = findViewById(R.id.btnGetall);
+        btnTransition = findViewById(R.id.btnTransition);
         txtData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -80,6 +82,12 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                         }
                     }
                 });
+            }
+        });
+        btnTransition.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
     }
