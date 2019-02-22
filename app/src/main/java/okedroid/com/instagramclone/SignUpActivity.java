@@ -1,5 +1,6 @@
 package okedroid.com.instagramclone;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.GestureDetector;
@@ -87,7 +88,8 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         btnTransition.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(SignUpActivity.this, SignUpLoginActivity.class);
+                startActivity(intent);
             }
         });
     }
