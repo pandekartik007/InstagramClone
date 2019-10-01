@@ -97,11 +97,11 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View v) {
         final ParseObject kickBoxer = new ParseObject("KickBoxer");
-        kickBoxer.put("name",edtName.getText().toString());
-        kickBoxer.put("punch_speed",Integer.parseInt(edtPunchSpeed.getText().toString()));
-        kickBoxer.put("punch_power",Integer.parseInt(edtPunchPower.getText().toString()));
-        kickBoxer.put("kick_speed",Integer.parseInt(edtKickSpeed.getText().toString()));
-        kickBoxer.put("kick_power",Integer.parseInt(edtKickPower.getText().toString()));
+        kickBoxer.put("Name",edtName.getText().toString());
+        kickBoxer.put("Punch_speed",Integer.parseInt(edtPunchSpeed.getText().toString()));
+        kickBoxer.put("Punch_power",Integer.parseInt(edtPunchPower.getText().toString()));
+        kickBoxer.put("Kick_speed",Integer.parseInt(edtKickSpeed.getText().toString()));
+        kickBoxer.put("Kick_power",Integer.parseInt(edtKickPower.getText().toString()));
         kickBoxer.saveInBackground(new SaveCallback() {
             @Override
             public void done(ParseException e) {
